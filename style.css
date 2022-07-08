@@ -1,0 +1,44 @@
+:root { 
+    --slider-width : 1200px;
+    
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+   
+}
+
+body { 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: rgb(158, 255, 255);
+}
+
+.slider { 
+    /* outline: 2px solid red; */
+    width: var(--slider-width);
+    height : 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.sliders { 
+    /* 크기 = width x 이미지 장수 */
+    width: calc(1200px * 3);
+    outline: 4px solid blue; 
+    display: flex;
+    /* 이미지 위치 변경 */
+    transform: translateX(0);
+
+    /* 애니메이션 트랜지션 */
+    transition-duration: 0.4s;
+}
+
+
+
+
